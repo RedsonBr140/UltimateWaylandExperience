@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "the-ultimate-wayland-experience",
+	"version": "${version}",
+	"name": "The Ultimate Wayland Experience",
+	"description": "This mod disables some features that aren't available on wayland so that you can play Minecraft without Xwayland.",
+	"authors": [
+		"RedsonBr140"
+	],
+	"contact": {
+		"homepage": "https://github.com/RedsonBr140/TheUltimateWaylandExperience",
+		"sources": "https://github.com/RedsonBr140/TheUltimateWaylandExperience"
+	},
+	"license": "MIT",
+	"icon": "assets/the-ultimate-wayland-experience/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"preLaunch": [
+			"com.github.redsonbr140.wayland.WaylandPreLaunch"
+		]
+	},
+	"mixins": [
+		"the-ultimate-wayland-experience.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.16.5",
+		"java": ">=8",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
